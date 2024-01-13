@@ -1,0 +1,500 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>I said yes - Your marriage , On your way </title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+      <!-- Customized Bootstrap Stylesheet -->
+<link href="{% static 'css/boot.css' %}" rel="stylesheet">
+
+<!-- Template Stylesheet -->
+<link href="{% static 'css/index.css' %}" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar start -->
+        
+            <div class="container-fluid bg-light">
+                <div class="container px-0">
+                    <nav class="navbar navbar-light navbar-expand-xl">
+                        <a href="index.html" class="navbar-brand">
+                            <h1 class="text-primary display-4">I said yes </h1>
+                        </a>
+                        <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="fa fa-bars text-primary"></span>
+                        </button>
+                        <div class="collapse navbar-collapse bg-light py-3" id="navbarCollapse">
+                            <div class="navbar-nav mx-auto border-top">
+                                <a href="index.html" class="nav-item nav-link active">Home</a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"> Services </a>
+                                    <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                                        <a href="team.html" class="dropdown-item"> Makeup artist</a>
+                                        <a href="testimonial.html" class="dropdown-item"> Djs</a>
+                                        <a href="gallery.html" class="dropdown-item"> Caterer </a>
+                                    </div>
+                                </div>            
+                                <a href="about.html" class="nav-item nav-link">About</a>        
+                                <a href="appointment.html" class="nav-item nav-link"> Appointment</a>        
+
+                                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                            </div>
+                            <div class="d-flex align-items-center flex-nowrap pt-xl-0">
+                                <button class="btn-search btn btn-primary btn-primary-outline-0 rounded-circle btn-lg-square" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+                                <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-4 ms-4"> Connect </a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+
+     
+
+
+
+        <!-- Carousel Start -->
+        <div class="container-fluid carousel-header px-0">
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img src="{% static 'img/couv2.jpg' %}" class="img-fluid" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h4 class="text-primary text-uppercase mb-3"> I said yes </h4>
+                                <h1 class="display-1 text-capitalize text-dark mb-3"> Elegance in Every Detail  </h1>
+                                <p class="mx-md-5 fs-4 px-4 mb-5 text-dark">Perfection in Every Moment. </p>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4" href="#"> Our Services </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'img/couv.jpg' %}" class="img-fluid" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h4 class="text-primary text-uppercase mb-3" style="letter-spacing: 3px;"> Your day </h4>
+                                <h1 class="display-1 text-capitalize text-dark mb-3">Crafting Your Perfect Day, </h1>
+                                <p class="mx-md-5 fs-4 px-5 mb-5 text-dark"> One Moment at a Time</p>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4" href="#">Our Services </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+
+        <!-- Services Start -->
+        <div class="container-fluid services py-5">
+            <div class="container py-5">
+                <div class="mx-auto text-center mb-5" style="max-width: 800px;">
+                    <p class="fs-4 text-uppercase text-center text-primary">Our Services </p>
+                    <h1 class="display-3">I said yes </h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="{% static 'img/djs.jpeg' %}" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="services-content text-start">
+                                        <h3>Djs </h3>
+                                        <p> Ignite the Celebration with Rhythm and Beats. Discover the finest DJs to elevate your wedding experience.</p>
+                                        <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4"> Discover </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <div class="services-content text-end">
+                                        <h3>Makeup Artists </h3>
+                                        <p> Unveiling Beauty with Skill and Passion. Find the best makeup artists for your wedding here. </p>                   
+                                      <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4"> Discover </a>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="{% static 'img/makeup.jpg' %}" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="{% static 'img/traiteur.jpg' %}" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="services-content text-start">
+                                        <h3> Caterer </h3>
+                                        <p> Savoring Moments, Delighting Tastes. Explore top-notch caterers to curate a culinary masterpiece for your wedding celebration. </p>
+                                        <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4"> Discover </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <div class="services-content text-end">
+                                        <h3> Camera man </h3>
+                                        <p><p> Capturing Memories in Every Frame. Discover skilled cameramen to document your wedding day, preserving every precious moment with expertise. </p>
+                                        <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4"> Discover</a>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="{% static 'img/Camera.jpeg' %}" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+        <!-- Services End -->
+
+        
+        <!-- About Start -->
+        <div class="container-fluid about py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5">
+                        <div class="video">
+                            <img src="{% static 'img/aboutus.jpg' %}" class="img-fluid rounded" alt="">
+                            <div class="position-absolute rounded border-5 border-top border-start border-white" style="bottom: 0; right: 0;;">
+                                <img src="{% static 'img/aboutus2.jpg' %}" class="img-fluid rounded" alt="">
+                            </div>
+                            <button type="button" class="btn btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <p class="fs-4 text-uppercase text-primary">About Us</p>
+                        <h1 class="display-4 mb-4">I Said Yes , where the magic of your wedding day begins </h1>
+                        <p class="mb-4"> At our website , we've brought together a community skilled and passionate professionals, including makeup artists, DJs, caterers, and cameramen, all dedicated to making your wedding day truly unforgettable. 
+                        </p>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fab fa-gitkraken fa-3x text-primary"></i>
+                                    <div class="ms-4">
+                                        <h5 class="mb-2"> Ratings </h5>
+                                        <p class="mb-0"> You can see the ratings on each profile we have </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-gift fa-3x text-primary"></i>
+                                    <div class="ms-4">
+                                        <h5 class="mb-2"> Planning </h5>
+                                        <p class="mb-0">Make an appointment so we can help you plan your big day </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="my-4">We believe in empowering you in your wedding planning journey 
+                        </p>
+                        <p class="mb-4">Join us at I Said Yes as we transform wedding dreams into reality. Let the countdown to your extraordinary day begin!
+                        </p>
+                        <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5"> Make an Appointment </a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <!-- Modal Video -->
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- 16:9 aspect ratio -->
+                        <div class="ratio ratio-16x9">
+                            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                                allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+        <!-- Team Start -->
+        <div class="container-fluid team py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+                    <p class="fs-4 text-uppercase text-primary">OUR TEAM </p>
+                    <h1 class="display-4 mb-4">Our Specialists </h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="team-item">
+                            <div class="team-img rounded-top">
+                                <img src="{% static 'img/team.jpg' %}" class="img-fluid w-100 rounded-top bg-light" alt="">
+                            </div>
+                            <div class="team-text rounded-bottom text-center p-4">
+                                <h3 class="text-white"> Douae bchd </h3>
+                                <p class="mb-0 text-white">Design Expert</p>
+                            </div>
+                            <div class="team-social">
+                                <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle mb-2" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle mb-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle mb-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle" href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="team-item">
+                            <div class="team-img rounded-top">
+                                <img src="{% static 'img/team.jpg' %}" class="img-fluid w-100 rounded-top bg-light" alt="">
+                            </div>
+                            <div class="team-text rounded-bottom text-center p-4">
+                                <h3 class="text-white">Doha Akrou</h3>
+                                <p class="mb-0 text-white">Organisalier Expert</p>
+                            </div>
+                            <div class="team-social">
+                                <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle mb-2" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle mb-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle mb-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle" href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="team-item">
+                            <div class="team-img rounded-top">
+                                <img src="{% static 'img/team.jpg' %}" class="img-fluid w-100 rounded-top bg-light" alt="">
+                            </div>
+                            <div class="team-text rounded-bottom text-center p-4">
+                                <h3 class="text-white"> Randa </h3>
+                                <p class="mb-0 text-white">Organisalier Expert</p>
+                            </div>
+                            <div class="team-social">
+                                <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle mb-2" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle mb-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle mb-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle" href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                 
+        <!-- Team End -->
+        <!-- Contact Start -->
+        <div class="container-fluid py-5">
+            <div class="container py-5">
+                <div class="row g-4 align-items-center">
+                    <div class="col-12">
+                        <div class="row g-4">
+                            <div class="col-lg-4">
+                                <div class="d-inline-flex bg-light w-100 border border-primary p-4 rounded">
+                                    <i class="fas fa-map-marker-alt fa-2x text-primary me-4"></i>
+                                    <div>
+                                        <h4>Address</h4>
+                                        <p class="mb-0"> Rue Moubaraka N64 , Tanger </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="d-inline-flex bg-light w-100 border border-primary p-4 rounded">
+                                    <i class="fas fa-envelope fa-2x text-primary me-4"></i>
+                                    <div>
+                                        <h4>Mail Us</h4>
+                                        <p class="mb-0">Isaidyes@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="d-inline-flex bg-light w-100 border border-primary p-4 rounded">
+                                    <i class="fa fa-phone-alt fa-2x text-primary me-4"></i>
+                                    <div>
+                                        <h4>Telephone</h4>
+                                        <p class="mb-0">+212 777030691</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="rounded">
+                            <iframe class="rounded-top w-100" 
+                            style="height: 450px; margin-bottom: -6px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.33750346623!2d-73.97968099999999!3d40.6974881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1694259649153!5m2!1sen!2sbd" 
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class=" text-center p-4 rounded-bottom bg-primary">
+                            <h4 class="text-white fw-bold">Follow Us</h4>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <a href="#" class="btn btn-light btn-light-outline-0 btn-square rounded-circle me-3"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="btn btn-light btn-light-outline-0 btn-square rounded-circle me-3"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="btn btn-light btn-light-outline-0 btn-square rounded-circle me-3"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="btn btn-light btn-light-outline-0 btn-square rounded-circle"><i class="fab fa-linkedin-in"></i></a>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="mb-4 text-white">Newsletter</h4>
+                            <p class="text-white"> e've brought together a community skilled and passionate professionals, including makeup artists, DJs, caterers, and cameramen, all dedicated to making your wedding day truly unforgettable.</p>
+                            <div class="position-relative mx-auto rounded-pill">
+                                <input class="form-control rounded-pill border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                                <button type="button" class="btn btn-primary btn-primary-outline-0 rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Our Services</h4>
+                            <a href=""><i class="fas fa-angle-right me-2"></i>  Makeup Artist</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Caterer</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Djs </a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Cameramen</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Schedule</h4>
+                            <p class="text-muted mb-0">Monday: <span class="text-white"> 09:00 am – 10:00 pm</span></p>
+                            <p class="text-muted mb-0">Saturday: <span class="text-white"> 09:00 am – 08:00 pm</span></p>
+                            <p class="text-muted mb-0">Sunday: <span class="text-white"> 09:00 am – 05:00 pm</span></p>
+                            <h4 class="my-4 text-white">Address</h4>
+                            <p class="mb-0"><i class="fas fa-map-marker-alt text-secondary me-2"></i> Rue Moubaraka N64 , Tanger </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Follow Us</h4>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Faceboock</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Instagram</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Twitter</a>
+                            <h4 class="my-4 text-white">Contact Us</h4>
+                            <p class="mb-0"><i class="fas fa-envelope text-secondary me-2"></i> Isadiyes@gmail.com</p>
+                            <p class="mb-0"><i class="fas fa-phone text-secondary me-2"></i> +212 777030791 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-4 text-center text-md-start mb-md-0">
+                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i> I Said Yes</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex justify-content-center">
+                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-twitter"></i></a>
+                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-instagram"></i></a>
+                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center text-md-end text-white">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'js/index.js' %}"></script>    </body>
+
+</html>
