@@ -39,10 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'appointements'
-]
+    'appointements' , 
+    'Services' , 
+    ]
 
 MIDDLEWARE = [
+
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -132,6 +134,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 JAZZMIN_SETTINGS= {
     'site_header' : "she said yes" , 
-    'site_brand': "Your marriage , On your way" , 
+    'site_brand': "Dashboard " , 
     'site_copyright':"SheSaidYes.com"
 }

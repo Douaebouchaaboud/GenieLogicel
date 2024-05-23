@@ -1,5 +1,7 @@
 from django.shortcuts import render, redirect
 from .forms import AppointmentForm
+    
+
 
 def index(request):
     return render(request, 'index.html')

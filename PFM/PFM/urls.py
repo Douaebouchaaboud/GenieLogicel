@@ -17,17 +17,31 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 from django.conf import settings
-from django.conf.urls.static import static 
+from django.conf.urls.static import static
 
-from appointements.views import index , app
+from appointements.views import index , app 
+from Services.views import caterer_list , caterer_details , dj_details, makeup_artist_list , makeup_artist_details , Djs_list
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('appoi/', include('appointements.urls')),
-    path('', index, name='index'),  # Update this line
-    path('app/', app, name='app'),  # Update this line
-]
+    path('', index, name='index'),  
+    path('app/', app, name='app'),  
+    path('Services/', include('Services.urls')),
+    path('MakeupArt/',makeup_artist_list ,  name='makeup_artist_list') , 
+    path('MakeupDetails/',makeup_artist_details ,  name='makeup_artist_details') ,
+    path('Dj/', Djs_list ,  name='Djs_list') , 
+    path('DjDetails/',dj_details ,  name='Djs_detail') ,
+    path('Traiteur/', caterer_list ,  name='Traiteur_list') , 
+    path('Traiteur_list/',caterer_details ,  name='Traiteur_detail') ,
+
+    
+    ]
+
+
+
+
 
 if settings.DEBUG:
   urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
